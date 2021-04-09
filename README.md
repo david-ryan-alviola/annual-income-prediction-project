@@ -14,6 +14,7 @@ I created a regression model to predict total annual income for hourly workers b
     6. numpy
     7. matplotlib.pyplot
     8. seaborn
+    9. [census data set](https://archive.ics.uci.edu/ml/machine-learning-databases/census-income-mld/census.tar.gz)
 * Steps to recreate
     1. Clone this repository
     2. Install `utilities.py` according to the instructions
