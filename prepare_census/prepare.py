@@ -10,7 +10,12 @@ _column_name_dictionary = {0 : 'age', 1 : 'worker_class', 2 : 'drop_1', 3 : 'dro
                          32 : 'country_of_father', 33 : 'country_of_mother', 34 : 'birth_country', 35 : 'citizenship',\
                          36 : 'is_self_employed', 37 : 'drop_8', 38 : 'drop_9', 39 : 'weeks_worked', 40 : 'year', 41 : 'drop_10'}
 
-def prepare_census(df):
+_string_cols = ['worker_class', 'education', 'highest_education', 'marital_status', 'major_industry_code', 'major_occupation_code',\
+              'race', 'of_hispanic_origin', 'sex', 'is_union_member', 'unemployed_reason', 'employment_status', 'tax_filer_status',\
+              'region', 'state', 'family_status', 'household_summary', 'lived_in_house_last_year', 'family_members_under_18',\
+              'country_of_father', 'country_of_mother', 'birth_country', 'citizenship']
+
+def prepare_census_df(df):
     census_df = df.copy()
     
     census_df.rename(columns=_column_name_dictionary, inplace=True)
@@ -19,6 +24,7 @@ def prepare_census(df):
     census_df = census_df[census_df.weeks_worked == 52]
     census_df.hourly_wage = census_df.hourly_wage / 100
     census_df = census_df[census_df.hourly_wage > 0]
+    census_df = _strip_whitespace_from_values(census_df)
     
     # Standard 40 hour work week for 52 weeks
     census_df['total_annual_income'] = (census_df.hourly_wage * 40 * 52) + census_df.total_dividends \
@@ -34,4 +40,12 @@ def _generate_drop_column_list(columns):
             drop_cols.append(col)
         
     return drop_cols
+
+def _strip_whitespace_from_values(df):
+    df = df.copy()
+    
+    for col in _string_cols:
+        df[col] = df[col].str.strip()
+        
+    return df
 
