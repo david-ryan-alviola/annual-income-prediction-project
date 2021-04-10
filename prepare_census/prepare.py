@@ -25,6 +25,7 @@ def prepare_census_df(df):
     census_df.hourly_wage = census_df.hourly_wage / 100
     census_df = census_df[census_df.hourly_wage > 0]
     census_df = _strip_whitespace_from_values(census_df)
+    census_df = _drop_duplicate_rows(census_df)
     
     # Standard 40 hour work week for 52 weeks
     census_df['total_annual_income'] = (census_df.hourly_wage * 40 * 52) + census_df.total_dividends \
@@ -48,4 +49,12 @@ def _strip_whitespace_from_values(df):
         df[col] = df[col].str.strip()
         
     return df
+
+def _drop_duplicate_rows(df):
+    census_df = df.copy()
+    
+    dupes = census_df[census_df.index.value_counts() > 1]
+    census_df.drop(index=dupes.index, inplace=True)
+    
+    return census_df
 
