@@ -65,36 +65,36 @@ Name | Description | Type
 :---: | :---: | :---:
 is_married | Indicates if worker is married or not | int
 age | Age in years | float
-30_40_yr_post_grad
-30_50_yr_high_school_grad
-50_plus_high_school_grad
-20_30_yr_high_school_grad
-college_grad
-40_plus_post_grad
-30_40_yr_no_investments
-40_plus_has_investments
-50_plus_no_investments
-40_50_yr_no_investments
-20_30_yr_no_investments
-20_40_yr_has_investments
-30_40_yr_private
-40_plus_public
-50_plus_private
-20_40_yr_public
-20_30_yr_private
-40_50_yr_private
-20_30_yr_white
-40_55_yr_white
-20_40_yr_not_white
-40_plus_not_white
-55_plus_white
-30_40_yr_white
-30_40_yr_non_union
-20_40_yr_union
-50_plus_non_union
-20_30_yr_non_union
-40_50_yr_non_union
-40_plus_union
+30_40_yr_post_grad | Indicates if a 30-40 yr old post graduate | int
+30_50_yr_high_school_grad | Indicates if 30-50 yr high school graduate | int
+50_plus_high_school_grad | Indicates if 50 yr plus high school graduate | int
+20_30_yr_high_school_grad | Indicates if 20-30 yr high school graduate | int
+college_grad | Indicates if a college graduate | int
+40_plus_post_grad | Indicates if a 40 yr plus post graduate | int
+30_40_yr_no_investments | Indicates if 30-40 yr with no investments | int
+40_plus_has_investments | Indicates if 40 plus yr with investments | int
+50_plus_no_investments | Indicates if 50 yr plus with no investments | int
+40_50_yr_no_investments | Indicates if 40-50 yr with no investments | int
+20_30_yr_no_investments | Indicates if 20-30 yr with no investments | int
+20_40_yr_has_investments | Indicates if 20-40 yr with investments | int
+30_40_yr_private | Indicates if 30-40 yr private worker | int
+40_plus_public | Indicates if 40 yr plus public worker | int
+50_plus_private | Indicates if 50 yr plus private worker | int
+20_40_yr_public | Indicates if 20-40 yr public worker | int
+20_30_yr_private | Indicates if 20-30 yr private worker | int
+40_50_yr_private | Indicates if 40-50 yr private worker | int
+20_30_yr_white | Indicates if 20-30 yr caucasian | int
+40_55_yr_white | Indicates if 40-55 yr caucasian | int
+20_40_yr_not_white | Indicates if 20-40 yr non-caucasian | int
+40_plus_not_white | Indicates if 40 yr plus non-caucasian | int
+55_plus_white | Indicates if 55 yr plus caucasian | int
+30_40_yr_white | Indicates if 30-40 yr caucasian | int
+30_40_yr_non_union | Indicates if 30-40 yr non-union worker | int
+20_40_yr_union | Indicates if 20-40 yr union worker | int
+50_plus_non_union | Indicates if 50 yr plus non-union worker | int
+20_30_yr_non_union | Indicates if 20-30 yr non-union worker | int
+40_50_yr_non_union | Indicates if 40-50 yr non-union worker | int
+40_plus_union | Indicates if 40 yr plus union worker | int
 #### Other data
 Name | Description | Type
 :---: | :---: | :---:
