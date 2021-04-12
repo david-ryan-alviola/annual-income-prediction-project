@@ -7,7 +7,7 @@ Expand upon the original classification model and use clusters to create a regre
 ## Setup this project
 * Dependencies
     1. [utilities.py](https://github.com/david-ryan-alviola/utilities/releases)
-        * Use release 2.5.1 or greater
+        * Use release 2.6.2 or greater
     2. python
     3. pandas
     4. scipy
