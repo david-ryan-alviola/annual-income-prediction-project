@@ -98,37 +98,37 @@ college_grad | Indicates if a college graduate | int
 #### Other data
 Name | Description | Type
 :---: | :---: | :---:
-worker_class
-education
-hourly_wage
-marital_status
-major_industry_code
-major_occupation_code
-race
-of_hispanic_origin
-sex
-is_union_member
-capital_gains
-capital_losses
-total_dividends
-household_summary
-company_size
-country_of_father
-country_of_mother
-birth_country
-citizenship
-is_self_employed
-weeks_worked
-year
-has_investments
-is_public
-Male
-White
-belongs_to_union
-is_college_grad
-is_high_school_grad
-is_post_grad
-not_high_school_grad
+worker_class | Describes if worker is in private or some level of govt work | string
+education | Describes level of education | string
+hourly_wage | Amount made per hour in US dollars | float
+marital_status | Describes if worker is married or single, etc | string
+major_industry_code | Describes the industry of the worker | string
+major_occupation_code | Describes the job of the worker| string
+race | Describes the race of the worker | string
+of_hispanic_origin | Describes worker's Hispanic origins, if any | string
+sex | Male or Female | string
+is_union_member | Indicates if worker belongs to a union | int
+capital_gains | Amount of gains from investments | float
+capital_losses | Amount of losses from investments | float
+total_dividends | Amount of dividends from investments | float
+household_summary | Describes workers home situation | string
+company_size | Size of company | int
+country_of_father | Home country of birth father | string
+country_of_mother | Home country of birth mother | string
+birth_country | Worker's birth country | string
+citizenship | Citizenship of worker | string
+is_self_employed | Indicates if worker is self-employed | int
+weeks_worked | Number of weeks worked in a year | int
+year | Indicates if year data was recorded was 94 or 95 | int
+has_investments | Indicates if worker has investments by summing gains, losses, and dividends. 1 if sum is non-zero; 0 otherwise | int
+is_public | Indicates if worker is in government work | int
+Male | Indicates if worker is male | int
+White | Indicates if worker is white | int
+belongs_to_union | Indicates if worker belongs to a union | int
+is_college_grad | Indicates if worker is a college graduate | int
+is_high_school_grad | Indicates if worker is a high school graduate | int
+is_post_grad | Indicates if worker is a post graduates | int
+not_high_school_grad | Indicates if worker did not graduate high school | int
 
 ## Results
 I applied the gradient boosting regressor model to the test data and got an explained variance score of 18%. This amount is the same as the model got on the training sample!
