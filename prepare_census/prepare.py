@@ -102,8 +102,7 @@ def _encode_categorical_variables(df):
     union_dummies = pd.get_dummies(df.is_union_member, drop_first=True)
     union_dummies.rename(columns={'Yes' : 'belongs_to_union'}, inplace=True)
     
-    industry_dummies = pd.get_dummies(df.major_industry_code, drop_first=False)
-    occupation_dummies = pd.get_dummies(df.major_occupation_code, drop_first=False)
+    education_dummies = pd.get_dummies(df.education, drop_first=False)
     
-    return pd.concat([df, class_dummies, sex_dummies, race_dummies, union_dummies, industry_dummies, occupation_dummies], axis=1)
+    return pd.concat([df, class_dummies, sex_dummies, race_dummies, union_dummies, education_dummies], axis=1)
 
