@@ -55,19 +55,80 @@ I planned to only use features that were already in the data set and not scale f
 
 
 ## Data Dictionary
-This is the structure of the data after preparation:
+This is the structure of the data for the second model:
 #### Target
 Name | Description | Type
 :---: | :---: | :---:
-
+total_annual_income | Calculated by multiplying the hourly wage by 40 hrs and by 52 weeks | float
 #### Features
 Name | Description | Type
 :---: | :---: | :---:
-
+is_married | Indicates if worker is married or not | int
+age | Age in years | float
+30_40_yr_post_grad
+30_50_yr_high_school_grad
+50_plus_high_school_grad
+20_30_yr_high_school_grad
+college_grad
+40_plus_post_grad
+30_40_yr_no_investments
+40_plus_has_investments
+50_plus_no_investments
+40_50_yr_no_investments
+20_30_yr_no_investments
+20_40_yr_has_investments
+30_40_yr_private
+40_plus_public
+50_plus_private
+20_40_yr_public
+20_30_yr_private
+40_50_yr_private
+20_30_yr_white
+40_55_yr_white
+20_40_yr_not_white
+40_plus_not_white
+55_plus_white
+30_40_yr_white
+30_40_yr_non_union
+20_40_yr_union
+50_plus_non_union
+20_30_yr_non_union
+40_50_yr_non_union
+40_plus_union
 #### Other data
 Name | Description | Type
 :---: | :---: | :---:
-
+worker_class
+education
+hourly_wage
+marital_status
+major_industry_code
+major_occupation_code
+race
+of_hispanic_origin
+sex
+is_union_member
+capital_gains
+capital_losses
+total_dividends
+household_summary
+company_size
+country_of_father
+country_of_mother
+birth_country
+citizenship
+is_self_employed
+weeks_worked
+year
+has_investments
+is_public
+Male
+White
+belongs_to_union
+is_college_grad
+is_high_school_grad
+is_post_grad
+not_high_school_grad
 
 ## Results
 I applied the gradient boosting regressor model to the test data and got an explained variance score of 18%. This amount is the same as the model got on the training sample!
