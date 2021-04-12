@@ -1,7 +1,8 @@
 # Predicting total income with mostly categorical data proves to be a lofty goal
 I created a regression model to predict total annual income for hourly workers based on census data and features engineered from clustering. This is an expansion of the original research that was used to create a classification model that predicted whether or not an individual made over 50_000 dollars a year.
 
-## Goals
+## Goal
+Expand upon the original classification model and use clusters to create a regression model that would predict the total annual income for a worker.
 
 ## Setup this project
 * Dependencies
